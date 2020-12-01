@@ -18,13 +18,13 @@ public class App
     public static void main( String[] args ) throws Exception {
 
         System.out.println("To exit press Ctl + C");
-        System.out.println("Enter a name:");
-        ISender sender = new Sender();
+
+        RabbitMQSender sender = new RabbitMQSender();
         while(true) {
+            System.out.println("Enter a name:");
             BufferedReader buffer = new BufferedReader(new InputStreamReader(System.in));
             String name = buffer.readLine();
             // Read an input string
-            //System.console().readLine();
             String message = "Hello my name is, ";
             message = "Hello my name is, " + name;
             logger.info("sending message: " + message);
