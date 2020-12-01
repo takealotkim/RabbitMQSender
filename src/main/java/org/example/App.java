@@ -25,8 +25,7 @@ public class App
             BufferedReader buffer = new BufferedReader(new InputStreamReader(System.in));
             String name = buffer.readLine();
             // Read an input string
-            String message = "Hello my name is, ";
-            message = "Hello my name is, " + name;
+            String message = "Hello my name is, " + name;
             logger.info("sending message: " + message);
             // write the message to rabbit MQ
             try {
