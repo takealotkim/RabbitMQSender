@@ -21,6 +21,11 @@ public class RabbitMQSender {
         init();
     }
 
+    public RabbitMQSender(Channel channel) throws IOException, TimeoutException {
+        server = new RabbitMQConfiguration();
+        this.channel = channel;
+    }
+
     private void init() throws IOException, TimeoutException {
         server = new RabbitMQConfiguration();
         connection = factory.newConnection();

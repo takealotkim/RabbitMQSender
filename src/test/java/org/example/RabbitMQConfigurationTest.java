@@ -14,4 +14,6 @@ public class RabbitMQConfigurationTest {
         assertTrue("localhost".equals(configuration.getHost()));
     }
 
+
+
 }
