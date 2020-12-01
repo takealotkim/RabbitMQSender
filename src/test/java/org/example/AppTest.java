@@ -9,6 +9,7 @@ import org.junit.Test;
  */
 public class AppTest 
 {
+    private App app;
     /**
      * Rigorous Test :-)
      */
@@ -17,4 +18,5 @@ public class AppTest
     {
         assertTrue( true );
     }
+
 }
